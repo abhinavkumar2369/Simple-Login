@@ -38,7 +38,7 @@ main{
     min-width: 800px;
     background-color: white;
     border-radius: 12px;
-    padding: 30px;
+    padding: 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -252,9 +252,97 @@ main .right .login-with-google img{
 
 
 
-
 /* ------------ Responsiveness ------------ */
 
-@media screen and (max-width: 700px){
-    
+@media screen and (max-width: 850px) {
+    main {
+        width: 90%;
+        max-width: 550px;
+        max-height: fit-content;
+        min-width: 400px;
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    main .left {
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    main .left img {
+        margin: 20px 0px;
+        width: 200px;
+    }
+
+    main .right {
+        width: 100%;
+        height: auto;
+        gap: 20px;
+    }
+
+    main .right .message-box h1 {
+        font-size: 1.4rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    main .right .message-box {
+        align-items: center;
+        text-align: center;
+    }
+
+    main .right .message-box span {
+        font-size: 0.85rem;
+    }
+    main .login span{
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        font-size: 14px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    main .left img {
+        width: 160px;
+    }
+
+    main .right .message-box h1 {
+        font-size: 1.2rem;
+    }
+
+    main .right .login-with-google button {
+        font-size: 0.85rem;
+    }
+
+    .username input,
+    .password input {
+        padding: 8px 8px;
+    }
+
+    .login button {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    main .left img {
+        width: 140px;
+    }
+
+    main .right .message-box h1 {
+        font-size: 1.1rem;
+    }
+
+    .login span {
+        font-size: 0.75rem;
+    }
 }
